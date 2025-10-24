@@ -1,0 +1,11 @@
+--- NDP.cpp.original
++++ NDP.cpp
+@@ -5,7 +5,7 @@
+ #include "mbed.h"
+ 
+ // Direct logging system - no buffering, immediate output
+-static bool log_enabled = false;
++static bool log_enabled = false;  // Set to false to disable all NDP logging
+ 
+ void start_log_thread() {
+     log_enabled = true;
